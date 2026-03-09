@@ -1,0 +1,23 @@
+Neural Storyteller: Image Captioning using Seq2Seq Deep Learning
+
+This project implements an AI-based image captioning system that automatically generates natural language descriptions for images. The model combines computer vision and natural language processing techniques to understand visual content and convert it into meaningful sentences.
+
+The system uses a pretrained ResNet50 convolutional neural network as an image encoder to extract visual features from images. These features are then passed to a Sequence-to-Sequence LSTM decoder, which generates captions word by word.
+
+The model is trained on the Flickr30k dataset, a large dataset containing thousands of images paired with human-written captions. To improve caption generation quality, the project implements Greedy Search and Beam Search decoding techniques during inference.
+
+Performance is evaluated using several NLP metrics, including:
+
+BLEU-4
+
+Precision
+
+Recall
+
+F1 Score
+
+ROUGE-1
+
+The project is implemented using PyTorch and executed on Google Colab with GPU acceleration. It also includes dataset preprocessing, feature caching, training pipelines, evaluation metrics, and caption visualization.
+
+This system demonstrates how Generative AI models can connect vision and language, enabling machines to describe scenes in natural language.
